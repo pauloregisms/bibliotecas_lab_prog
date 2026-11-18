@@ -19,7 +19,7 @@ int main(void) {
     /* 3. Desenha uma caixa central menor (largura 54, altura 9) */
     Clic_move(6, 14);
     Clic_setFontColor(Color_CYAN);
-    Clic_printBox(54, 9);
+    Clic_printBox(60, 9);
     Clic_resetColor();
 
     /* 4. Preenche o interior da caixa com informacoes coloridas */
@@ -35,9 +35,9 @@ int main(void) {
     Clic_setFontColor(Color_WHITE);
     printf("Pressione qualquer tecla para encerrar...");
     Clic_resetColor();
+    Clic_fixDraw();
 
     /* 5. Aguarda o aluno apertar uma tecla e posiciona o cursor no rodape */
     Clic_keyCapture();
-    Clic_fixDraw();
     return 0;
 }
